@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Desafio Final - Rodrigo Nunes</h2>
+
+<a href="/apidocs/">Documentação Swagger</a>
+
+<p>Links para teste:</p>
+<a href="{{ url_for('clientes.listar_todos')}}">Listar Clientes</a>
+<a href="{{ url_for('clientes.contar_clientes')}}">Contar clientes</a>
+
+<p> Formulário para teste de inserção de clientes</p>
+<form action="{{url_for('clientes.salvar_via_form')}}" method='post'>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" value=""><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value=""><br><br>
+    <input type="submit" value="Salvar">
+  </form>
+
+  <p> Formulário para teste de deleção de clientes</p>
+<form action="{{url_for('clientes.deletar_via_form')}}" method='post'>
+    <label for="id">ID a ser deletado:</label><br>
+    <input type="text" id="id" name="id" value=""><br>
+    <input type="submit" value="Deletar">
+  </form>
+
+</body>
+</html>
