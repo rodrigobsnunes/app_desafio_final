@@ -1,0 +1,6 @@
+services:
+  app_desafio_final:
+    build: https://github.com/rodrigobsnunes/app_desafio_final.git#main
+    #image: app_desafio_final:latest
+    ports: 
+      - 5000:8080
