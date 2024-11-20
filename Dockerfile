@@ -1,4 +1,4 @@
-FROM python:3.12.6
+FROM python:3.12.6-alpine
 
 #define o working dir
 WORKDIR /app_desafio_final
